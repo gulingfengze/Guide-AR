@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+       <FrameLayout
+        android:id="@+id/liveImage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:gravity="left"
+        android:orientation="vertical" >
+        <SurfaceView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sv"/>
+          
+               <ImageView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/building"/>
+         
+      </FrameLayout>
+         
+    <LinearLayout
+        android:id="@+id/sideButtons"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#171717" >
+        <!--  <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="搜索"
+             android:layout_weight="1"
+             android:textColor="#ffffffff"
+            android:background="@drawable/w" />
+ -->
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="列表"
+             android:layout_weight="1"
+             android:textColor="#ffffffff"
+            android:background="@drawable/w" />
+         <Button
+            android:id="@+id/indoorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="#ffffffff"
+            android:text="室内"
+             android:layout_weight="1"
+            android:background="@drawable/w" />
+          <Button
+            android:id="@+id/mapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="#ffffffff"
+            android:text="地图"
+             android:layout_weight="1"
+            android:background="@drawable/w" />
+    </LinearLayout>
+
+</LinearLayout>

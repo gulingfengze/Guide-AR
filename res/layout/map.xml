@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+      <EditText
+            android:id="@+id/et_search"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:hint="兴趣搜索"
+            android:textSize="20dip" /> 
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="60dip"
+            android:layout_height="44dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_search_moto" />
+    </LinearLayout>  -->
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.07"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/maintab_toolbar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/model"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="2.0dip"
+                android:drawableTop="@drawable/bbk_search_layer"
+                android:text="@string/model" />
+
+            <RadioButton
+                android:id="@+id/outdoor"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="2.0dip"
+                android:drawableTop="@drawable/icon_geo"
+                android:text="@string/main_outdoor" />
+
+           <!--  <RadioButton
+                android:id="@+id/rout"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="2.0dip"
+                android:drawableTop="@drawable/rout"
+                android:text="@string/rout" /> -->
+ 
+            <RadioButton
+                android:id="@+id/indoor"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="2.0dip"
+                android:drawableTop="@drawable/icon_geo"
+                android:text="@string/main_indoor" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

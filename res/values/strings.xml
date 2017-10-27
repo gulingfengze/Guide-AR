@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AugmentedReality</string>
+    <string name="google_places_api_key">AIzaSyC5mTsDhjayzCqXH87ggEYsfswR1cStfX8</string>
+    <string name="baidu_places_api_ak">wawyuy9wQ2AywA6IIF7ojCCanctYzvv7</string>
+     <string name="model">模式</string>
+    <string name="main_outdoor">室外</string>
+    <string name="main_indoor">室内</string>
+    <string name="rout">路线</string>
+</resources>
